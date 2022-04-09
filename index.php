@@ -1,16 +1,26 @@
 <?php
 include_once("templates/header.php");
 ?>
-
-<h1>Blog Codar</h1>
-<h2>O SEU BLOG DE PROGRAMAÇÃO</h2>
-<img src="img/banner.jpg" alt="imagem de um programador" />
-<div>
-  <h3>Programando em PHP</h3>
-  <p>Neste post você vai aprender tudo que precisa para ser um bom programador de PHP!</p>
-</div>
-
-
+<main>
+  <div id="titulo">
+    <h1>Blog Codar</h1>
+    <p>O SEU BLOG DE PROGRAMAÇÃO</p>
+  </div>
+  <div id="posts">
+    <?php foreach ($posts as $post) : ?>
+      <div class="caixa_post">
+        <h2 class="titulo_post">
+          <a href="post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
+        </h2>
+        <img src="img/<?= $post['img'] ?>">
+        <p class="desc_post"><?= $post['descricao'] ?></p>
+        <?php foreach ($post['tags'] as $tag) : ?>
+          <a href="#"><?= $tag ?></a>
+        <?php endforeach; ?>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</main>
 <?php
 include_once("templates/footer.php");
 ?>

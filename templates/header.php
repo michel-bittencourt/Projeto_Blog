@@ -1,6 +1,8 @@
 <?php
-include_once("helpers/url.php");
+    include_once('data/categorias.php');
+    include_once('data/posts.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,7 +20,7 @@ include_once("helpers/url.php");
             <img src="img/icone.png" alt="">
         </a>
         <nav id="bar_nav">
-            <li><a href="#">home</a></li>
+            <li><a href="index.php">home</a></li>
             <li><a href="#">categoria</a></li>
             <li><a href="#">sobre</a></li>
             <li><a href="#">contato</a></li>
