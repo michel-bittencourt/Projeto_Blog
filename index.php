@@ -6,7 +6,7 @@ include_once("templates/header.php");
     <h1>Blog Codar</h1>
     <p>O SEU BLOG DE PROGRAMAÇÃO</p>
   </div>
-  <div id="posts">
+  <div id="container_posts">
     <?php foreach ($posts as $post) : ?>
       <div class="caixa_post">
         <h2 class="titulo_post">

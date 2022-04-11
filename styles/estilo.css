@@ -43,13 +43,16 @@ html {
 }
 /*---------------------------------------------------*/
 /*CORPO*/
-main{
+main {
   margin-bottom: 250px;
 }
-#titulo h1 {
+#titulo {
   text-align: center;
-  font-size: 30pt;
   margin: 25px auto 5px auto;
+  font-size: 50px;
+}
+#titulo h1 {
+  font-size: 30pt;
 }
 #titulo p {
   text-align: center;
@@ -58,7 +61,15 @@ main{
   font-weight: normal;
   margin: 10px auto 10px auto;
 }
-/*---------------------------------------------------*/
+.caixa_post img{
+  width: 20px;
+}
+#container_posts{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 /*RODAPE*/
 footer {
   width: 100%;
