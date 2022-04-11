@@ -10,13 +10,20 @@
         ],
         [
             'id' => 2,
-            'title' => 'Orientação a Objeto com Java',
+            'title' => 'Orientação a Objeto com Java, venha aprender',
             'descricao' => 'Aprenda o paradigma de orientação a objetos com Java, uma linguagem em evolução',
             'tags' => ['Java', 'OPP', 'Programação Avançada'],
             'img' => 'img2.jpg'
         ],
         [
             'id' => 3,
+            'title' => 'A importância da lógica de programação',
+            'descricao' => 'A lógica de programação é o ponto inicial de muitos estudantes de programação',
+            'tags' => ['lógica', 'programação', 'algoritmos'],
+            'img' => 'img3.jpg'
+        ],
+        [
+            'id' => 4,
             'title' => 'A importância da lógica de programação',
             'descricao' => 'A lógica de programação é o ponto inicial de muitos estudantes de programação',
             'tags' => ['lógica', 'programação', 'algoritmos'],

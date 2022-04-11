@@ -15,7 +15,7 @@ include_once("templates/header.php");
         <img src="img/<?= $post['img'] ?>">
         <p class="desc_post"><?= $post['descricao'] ?></p>
         <?php foreach ($post['tags'] as $tag) : ?>
-          <a href="#"><?= $tag ?></a>
+          <a href="#" class="link_tag"><?= $tag ?></a>
         <?php endforeach; ?>
       </div>
     <?php endforeach; ?>
