@@ -1,0 +1,52 @@
+#main_post{
+    padding: 15px;
+    display: grid; /*Formato de grade*/
+    grid-template-columns: 80% 20%; /*Cria 2 colunas, uma com 80% de tamanho, e outra com 20%*/
+    grid-gap: 10px; /*Espaço entre as grades*/
+    padding-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+aside{
+    padding: 15px;
+}
+.descricao_post{
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(128, 128, 128);
+    font-size: 13pt;
+    margin-top: 8px;
+}
+#main_post img {
+  width: 65%;
+  padding: 20px 0;
+}
+.cabecalho_post{
+    margin: 5px 0 10px 0;
+}
+.noticia_post{
+    font-size: 13pt;
+    text-align: justify;
+    line-height: 1.8; /*Altura da linha, melhora a leitura*/
+}
+#main_post li{
+    list-style: none;
+}
+aside h3{
+    font-size: 20pt;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: lighter;
+}
+aside li{
+    margin-top: 10px;
+}
+aside a{
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+}
+aside a:hover{
+    color:rgb(114, 114, 114);
+}

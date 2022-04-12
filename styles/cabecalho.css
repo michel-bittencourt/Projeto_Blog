@@ -1,0 +1,54 @@
+#logo {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 9.5%;
+}
+#logo img {
+  width: 50px;
+}
+#bar_nav {
+  display: flex;
+  align-items: center; /*Alinha a coluna no começo, centro ou final, usando start, center ou end*/
+  justify-content: center; /*Alinha a linha no começo, centro ou final, usando start, center ou end*/
+  padding: 20px;
+  background-color: rgb(34, 34, 34);
+  text-transform: uppercase; /*Deixa em letras maiusculas*/
+  list-style: none; /*Tira a decoração da lista, como hifen ou ponto do inicio*/
+}
+#bar_nav li {
+  margin: 0 10px; /*Separa as linhas aplicando 0px para cima e baixo, e aplica 10px dos lados*/
+  padding: 5px;
+  max-width: 11%;
+}
+#bar_nav a {
+  color: white;
+  text-decoration: none; /*Tira o sublinhado*/
+  transition: 0.3s; /*Aplica transição de 5 segundo para usar no hover abaixo*/
+  font-size: 12pt;
+}
+#bar_nav a:hover {
+  color: rgb(202, 202, 202);
+}
+
+/*MOBILE*/
+@media (max-width: 930px) {
+  #logo {
+    display: block;
+    position: relative;
+    margin: 10px auto 10px auto;
+    width: 50px;
+  }
+  #bar_nav a {
+    font-size: 13pt;
+    line-height: 35px;
+  }
+  #bar_nav {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+  }
+  #bar_nav li{
+    margin: 0 auto 0 auto;
+  }
+}

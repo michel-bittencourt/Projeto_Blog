@@ -12,7 +12,7 @@ include_once("templates/header.php");
         <h2 class="titulo_post">
           <a href="post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
         </h2>
-        <img src="img/<?= $post['img'] ?>">
+        <a href="post.php?id=<?= $post['id'] ?>"><img src="img/<?= $post['img'] ?>"></a>
         <p class="desc_post"><?= $post['descricao'] ?></p>
         <?php foreach ($post['tags'] as $tag) : ?>
           <a href="#" class="link_tag"><?= $tag ?></a>
